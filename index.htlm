@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Roux Inspired | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="#">LE ROUX STYLE</a>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#">Novidades</a></li>
+                <li><a href="#">Coleções</a></li>
+                <li><a href="#">Alfaiataria</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icons">
+            <button class="icon-btn">🔍</button>
+            <button class="icon-btn">👜</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Minimalismo & Luxo</h1>
+                <p>Peças selecionadas para a mulher contemporânea.</p>
+                <a href="#" class="btn-primary">Ver Coleção</a>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="category-card">
+                <div class="img-placeholder"></div>
+                <h3>Conjuntos</h3>
+            </div>
+            <div class="category-card">
+                <div class="img-placeholder"></div>
+                <h3>Vestidos</h3>
+            </div>
+            <div class="category-card">
+                <div class="img-placeholder"></div>
+                <h3>Acessórios</h3>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Nome da Sua Agência / Cliente. Inspirado em Le Roux.</p>
+    </footer>
+
+</body>
+</html>
