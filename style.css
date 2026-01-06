@@ -1,0 +1,121 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FAF9F6;
+    color: #1A1A1A;
+}
+
+/* Header Minimalista */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #eee;
+}
+
+.logo a {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #1A1A1A;
+    letter-spacing: 2px;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu ul li {
+    margin: 0 15px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.nav-menu ul li a:hover {
+    color: #C2A385; /* Tom bronze/nude */
+}
+
+/* Hero Section */
+.hero-section {
+    height: 80vh;
+    background-color: #F5F5DC; /* Nude */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #1A1A1A;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+/* Grid de Categorias */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 50px 5%;
+}
+
+.category-card {
+    text-align: center;
+}
+
+.img-placeholder {
+    width: 100%;
+    height: 350px;
+    background: #eee;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+.footer {
+    padding: 40px;
+    text-align: center;
+    font-size: 12px;
+    background: #fff;
+    border-top: 1px solid #eee;
+}
+
+/* Responsividade para Celular */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none; /* Oculta menu em telas pequenas para portfólio simples */
+    }
+    .hero-content h1 {
+        font-size: 32px;
+    }
+}
