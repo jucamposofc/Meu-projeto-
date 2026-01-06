@@ -1,121 +1,112 @@
-/* Configurações Gerais */
+/* Configuração Base Dark */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #FAF9F6;
-    color: #1A1A1A;
+    background-color: #020617;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
 }
 
-/* Header Minimalista */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Menu de Navegação Superior */
+.header-nav {
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(10px);
     padding: 20px 5%;
-    background: #fff;
     position: sticky;
     top: 0;
-    z-index: 100;
-    border-bottom: 1px solid #eee;
-}
-
-.logo a {
-    font-family: 'Playfair Display', serif;
-    font-size: 24px;
-    font-weight: 700;
-    text-decoration: none;
-    color: #1A1A1A;
-    letter-spacing: 2px;
+    z-index: 1000;
+    border-bottom: 1px solid #1e293b;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-menu ul {
     display: flex;
     list-style: none;
-}
-
-.nav-menu ul li {
-    margin: 0 15px;
+    gap: 30px;
 }
 
 .nav-menu ul li a {
     text-decoration: none;
-    color: #444;
-    font-size: 14px;
+    color: #94a3b8;
+    font-weight: 600;
     text-transform: uppercase;
+    font-size: 14px;
     transition: 0.3s;
 }
 
 .nav-menu ul li a:hover {
-    color: #C2A385; /* Tom bronze/nude */
+    color: #38bdf8;
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
 }
 
-/* Hero Section */
-.hero-section {
-    height: 80vh;
-    background-color: #F5F5DC; /* Nude */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Container e Títulos */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.main-title {
     text-align: center;
-}
-
-.hero-content h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 48px;
-    margin-bottom: 10px;
-}
-
-.btn-primary {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 30px;
-    background: #1A1A1A;
-    color: #fff;
-    text-decoration: none;
+    margin: 40px 0;
+    color: #38bdf8;
     text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
-/* Grid de Categorias */
-.categories {
+/* Grid de Templates (conforme a imagem) */
+.grid-templates {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
-    padding: 50px 5%;
 }
 
-.category-card {
+.card-item {
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    padding: 30px;
+    border-radius: 15px;
     text-align: center;
+    transition: 0.3s;
 }
 
-.img-placeholder {
-    width: 100%;
-    height: 350px;
-    background: #eee;
-    margin-bottom: 15px;
+.card-item:hover {
+    border-color: #38bdf8;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
 }
 
-/* Footer */
-.footer {
+/* Grid de Planos (conforme a imagem) */
+.grid-planos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.plano-box {
+    background: #0f172a;
+    border: 2px solid #1e293b;
     padding: 40px;
+    border-radius: 20px;
     text-align: center;
-    font-size: 12px;
-    background: #fff;
-    border-top: 1px solid #eee;
 }
 
-/* Responsividade para Celular */
-@media (max-width: 768px) {
-    .nav-menu {
-        display: none; /* Oculta menu em telas pequenas para portfólio simples */
-    }
-    .hero-content h1 {
-        font-size: 32px;
-    }
+.price {
+    font-size: 2.5em;
+    color: #38bdf8;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    padding: 60px 0;
+    border-top: 1px solid #1e293b;
+    margin-top: 50px;
 }
